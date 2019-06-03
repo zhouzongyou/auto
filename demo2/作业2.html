@@ -1,0 +1,160 @@
+<!doctype html><!-- 声明文档类型为 html-->
+<html lang="en">
+	<head><!-- head 部分用户看不见-->
+		<meta charset="UTF-8"><!--字典 国际编码集 还有gpk等格式-->
+		<meta name="Generator" content="EditPlus®"><!-- 创造者-->
+		<meta name="Author" content=""><!-- 作者-->
+		<meta name="Keywords" content=""><!-- 关键词-->
+		<meta name="Description" content=""><!-- 描述 -->
+		<title>表单作业2</title>
+		<style type="text/css">
+			form,ul,li{
+				margin:0;
+				padding:0;
+			}
+			ul li{
+				list-style:none;
+			}
+			.box{
+				position:relative;
+				width:430px;
+				margin:100px auto;
+				background-color:#f2f2f2;
+				border:1px solid #f2f2f2;
+				border-radius:5%;
+				box-shadow:0 0 7px;
+			}
+			ul li{
+				margin:15px 30px 15px 10px;
+				text-align:right;
+			}
+			ul input{
+				width:290px;
+				height:42px;
+				margin-left:10px;
+				text-indent:12px;
+				border:1px solid #f2f2f2;
+			}
+			#register{
+				width:90px;
+				font-size:14px;
+				color:white;
+				text-align:center;
+				background-color:#3c6cb1;
+				border:1px solid #f2f2f2;
+				border-radius:7%;
+			}
+			#land{
+				width:200px;
+				font-size:14px;
+				color:white;
+				text-align:center;
+				background-color:#3c6cb1;
+				border:1px solid #f2f2f2;
+				border-radius:7%;
+			}
+			.explain{
+				display:none;
+			}
+			.first{
+				margin-top:30px;
+			}
+			.last{
+				margin-bottom:30px;
+			}
+			.first .triangle{
+				position:absolute;
+				top:17px;
+				right:18px;
+				width:0;
+				height:0;
+				border-left:20px solid transparent;
+				border-top:20px solid transparent;
+				border-bottom:20px solid transparent;
+				border-right:20px solid #3c6cb1;
+			}
+			.first .tips{
+				position:absolute;
+				top:17px;
+				right:-174px;
+				width:200px;
+				height:40px;
+				color:white;
+				font-size:14px;
+				text-align:left;
+				border:1px solid #3c6cb1;
+				border-radius:5%;
+				background-color:#3c6cb1;
+			}
+			.mail .triangle{
+				position:absolute;
+				top:204px;
+				right:18px;
+				width:0;
+				height:0;
+				border-left:20px solid transparent;
+				border-top:20px solid transparent;
+				border-bottom:20px solid transparent;
+				border-right:20px solid #3c6cb1;
+			}
+			.mail .tips{
+				position:absolute;
+				top:204px;
+				right:-155px;
+				width:180px;
+				height:40px;
+				color:white;
+				font-size:14px;
+				line-height:34px;
+				text-align:center;
+				border:1px solid #3c6cb1;
+				border-radius:5%;
+				background-color:#3c6cb1;
+			}
+			.first #account:focus ~ .explain{
+				display:block;
+			}
+			.mail #email:focus ~ .explain{
+				display:block;
+			}
+		</style>
+	</head>
+	<body><!-- 用户可视区域-->
+		<form class="box" action="http://www.baidu.com" name='fex'>
+			<ul>
+				<li class="first">
+					<span>user</span>
+					<input id="account" type="text" name='txt' placeholder="请输入账号">
+					<div class="explain">
+						<p class="triangle"></p>
+						<p class="tips">用户名开头必需是小写字母不能有特殊符号</p>
+					</div>
+				</li>
+				<li>
+					<span>password</span>
+					<input type="password" name="password" placeholder="密码">
+				</li>
+				<li>
+					<span>password</span>
+					<input type="password" name="password" placeholder="再次输入密码">
+				</li>
+				<li class="mail">
+					<span>email</span>
+					<input id="email" type="email" name="email" placeholder="输入你的邮箱">
+					<div class="explain">
+					<p class="triangle"></p>
+					<p class="tips">请输入正确邮箱号</p>
+					</div>
+				</li>
+				<li>
+					<span>nickname</span>
+					<input type="text" name="nickname" placeholder="昵称">
+				</li>
+				<li class="last">
+					<input id="register" type="submit" name="register" value="注册">
+					<input id="land" type="submit" name="submit" value="我有账号，我要登陆">
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>
